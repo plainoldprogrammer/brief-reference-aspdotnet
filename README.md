@@ -12,3 +12,14 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 NOTE: The static files must be on wwwroot folder (on the root).
 ```
+
+#### Map the Usr to Index
+```
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
+}
+
+NOTE: The order matters.
+```
